@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>Plant EncycloPedia</title>
+    
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 20px;
+           
+        }
+
+         h3, p {
+            margin: 0;
+        }
+
+        h2 {
+            color: #333;
+            text-align: left; /* Align text to the left */
+            margin-bottom: 20px;
+            margin-top: 20px; /* Add margin to the top to position it at the top-left corner */
+        }
+        
+
+        p {
+            color: #666;
+        }
+
+        .product__container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .product__card {
+            
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .product__card:hover {
+            transform: scale(1.05);
+        }
+
+        .product__img {
+            width: 100%;
+            height: 100%;
+            max-width: 150px; /* Set a maximum width to maintain proportions */
+            max-height: 150px; /* Set a maximum height to maintain proportions */
+            object-fit: contain; /* Ensure images maintain their aspect ratio and are centered */
+
+        }
+        
+
+        .product__title {
+            font-size: 1.2rem;
+            margin: 10px 0;
+            display: block;
+            margin: 0 auto; /* Center the image horizontally */
+        }
+
+        .product__price {
+            color: #4CAF50;
+            font-weight: bold;
+        }
+
+        .button--flex {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .button--flex:hover {
+            background-color: #45a049;
+        }
+
+        /* Style the back button */
+        .back-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+
+        /* Add more styles as needed */
+    </style>
+</head>
+<body>
+    <section class="product section container" id="products">
+        <h2 class="section__title-center">
+            Plant EncycloPedia 
+        </h2>
+
+        <p class="product__description">
+            Here are some selected plants 
+        </p>
+
+        <div class="product__container grid">
+            <article class="product__card">
+                <div class="product__circle"></div>
+
+                <img src="assets/img/product1.png" alt="" class="product__img">
+
+                <h3 class="product__title">Cacti Plant</h3>
+                <span class="product__price">$19.99</span>
+
+                <button class="button--flex product__button">
+                    <i class="ri-shopping-bag-line"></i>
+                </button>
+            </article>
+
+            <article class="product__card">
+                <div class="product__circle"></div>
+
+                <img src="assets/img/product2.png" alt="" class="product__img">
+
+                <h3 class="product__title">Cactus Plant</h3>
+                <span class="product__price">$11.99</span>
+
+                <button class="button--flex product__button">
+                    <i class="ri-shopping-bag-line"></i>
+                </button>
+            </article>
+
+            <article class="product__card">
+                <div class="product__circle"></div>
+
+                <img src="assets/img/product3.png" alt="" class="product__img">
+
+                <h3 class="product__title">Aloe Vera Plant</h3>
+                <span class="product__price">$7.99</span>
+
+                <button class="button--flex product__button">
+                    <i class="ri-shopping-bag-line"></i>
+                </button>
+            </article>
+
+            <article class="product__card">
+                <div class="product__circle"></div>
+
+                <img src="assets/img/product4.png" alt="" class="product__img">
+
+                <h3 class="product__title">Succulent Plant</h3>
+                <span class="product__price">$5.99</span>
+
+                <button class="button--flex product__button">
+                    <i class="ri-shopping-bag-line"></i>
+                </button>
+            </article>
+
+            <article class="product__card">
+                <div class="product__circle"></div>
+
+                <img src="assets/img/product5.png" alt="" class="product__img">
+
+                <h3 class="product__title">Succulent Plant</h3>
+                <span class="product__price">$10.99</span>
+
+                <button class="button--flex product__button">
+                    <i class="ri-shopping-bag-line"></i>
+                </button>
+            </article>
+
+            <article class="product__card">
+                <div class="product__circle"></div>
+
+                <img src="assets/img/product6.png" alt="" class="product__img">
+
+                <h3 class="product__title">Green Plant</h3>
+                <span class="product__price">$8.99</span>
+
+                <button class="button--flex product__button">
+                    <i class="ri-shopping-bag-line"></i>
+                </button>
+            </article>
+        </div>
+    </section>
+    <!-- Add other content and styling as needed -->
+
+    <!-- Back button to navigate back to the main page -->
+    <button class="back-button" onclick="goBack()">Go Back</button>
+
+    <!-- Add your JavaScript links here if needed -->
+    <script src="assets/js/scrollreveal.min.js"></script>
+        
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+    <script>
+        // JavaScript function to navigate back
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+
+</body>
+</html>
